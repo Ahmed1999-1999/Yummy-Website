@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <!-- F A V I C O N -->
+    <link
+      rel="shortcut icon"
+      href="./assets/imgs/logo.png"
+      type="image/x-icon"
+    />
+    <!-- B O O T S T R A B   I C O N S   L I B R A R Y -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- B O O T S T R A B   S T Y L E S H E E T -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- M A I N   S T Y L E S H E E T-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- M E D I A   Q U E R Y -->
+    <link rel="stylesheet" href="./assets/css/media.css" />
+    <!-- G O O G L E   F O N T S -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com" />
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Poppins:wght@200;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+    <!-- S T A R T                  C O L L A P S E D    S I D E B A R                             S E C T I O N-->
+      <nav id="sideBar" class="sidebar position-fixed top-0 bottom-0">
+          <div class="nav-body d-flex flex-column justify-content-between">
+              <div class="links">
+                  <ul id="linksList" class="ps-2 mt-2">
+                      <li id="search" class="my-link overflow-hidden"><p class="link-text">Search</p></li>
+                      <li id="Category" class="my-link overflow-hidden"><p class="link-text">Categories</p></li>
+                      <li id="area" class="my-link overflow-hidden"><p class="link-text">Area</p></li>
+                      <li id="ingredient" class="my-link overflow-hidden"><p class="link-text">Ingredients</p></li>
+                      <li id="contact" class="my-link overflow-hidden"><p class="link-text">Contact Us</p></li>
+                  </ul>
+              </div>
+              <div class="nav-footer pb-5 ps-2">
+                  <div class="social mb-2">
+                    <a href="http://facebook.com">
+                      <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="http://twitter.com">
+                      <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="http://google.com">
+                      <i class="bi bi-globe"></i>
+                    </a>
+                  </div>
+                  <div class="footer text-secondary">
+                      <p>Copyright © 2019 All Rights Reserved.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="nav-btn d-flex flex-column justify-content-between align-items-center position-absolute top-0 bottom-0">
+            <div class="icon">
+              <img src="assets/imgs/logo.png" alt="icon">
+            </div>
+            <div class="btn-icon">
+                <i id="btnToggle" class="bi bi-list h1 text-black"></i>
+            </div>
+            <div class="share-icons d-flex flex-column">
+              <a href="http://google.com">
+                <i class="bi bi-globe text-black h5"></i>
+              </a>
+              <a href="#">
+                <i class="bi bi-share-fill text-black h5"></i>
+              </a>
+            </div>
+          </div>
+      </nav>
+    <!--  E N D                     C O L L A P S E D    S I D E B A R                             S E C T I O N-->
+    <!-- S T A R T                  M A I N    B O D Y                             S E C T I O N-->
+    <section id="mainSection" class="container mx-auto">
+      <!--Loading Screen-->
+      <div class="loading-screen fixed-top bottom-0 bg-secondary justify-content-center align-items-center">
+          <i class="fa-solid fa-spinner fa-5x text-white fa-spin"></i>
+      </div>
+      <!--Search Section-->
+      <div id="searchBox" class="inner row py-3 g-4"></div>
+      <!--Meal Details-->
+      <!--Random Meals-->
+      <div id="mealsGallery" class="inner row py-3 g-4"></div>
+      <!--Categories-->
+      <div id="mealsCategories" class="inner row py-3 g-4"></div>
+      <!--Categorie-->
+      <div id="singleMealCategoriy" class="catefory row py-3 g-4"></div>
+      <!--Areas-->
+      <div id="areaSection" class="container mx-auto row py-3 g-4"></div>
+      <!--Ingredients-->
+      <div id="ingredientSection" class="container mx-auto row py-3 g-4"></div>
+      <!--Contact Section-->
+      <div id="contactBox" class="inner py-3 g-4 text-center w-75 mx-auto">
+        <div class="container row">
+          <div class="col-md-6 my-3">
+            <input
+              type="text"
+              id="name"
+              class="form-control
+              bg-transparent"
+              placeholder="Enter your name">
+              <div id="warnningName" class="alert alert-danger w-100 mt-2 d-none ">
+                Special characters and numbers not allowed
+              </div>
+            </div>
+            
+            <div class="col-md-6 my-3">
+              <input
+              type="text"
+              id="email"
+              class="form-control
+              bg-transparent"
+              placeholder="Enter your Email">
+              <div id="warnningEmail" class="alert alert-danger w-100 mt-2 d-none ">
+                Email not valid *exemple@yyy.com
+              </div>
+            </div>
+      
+          <div class="col-md-6 my-3">
+            <input
+              type="text"
+              id="phone"
+              class="form-control
+              bg-transparent"
+              placeholder="Enter your phone">
+              <div id="warnningPhone" class="alert alert-danger w-100 mt-2 d-none ">
+                Enter valid Phone Number
+              </div>
+          </div>
+      
+          <div class="col-md-6 my-3">
+            <input
+              type="number"
+              min="1"
+              max="100"
+              id="age"
+              class="form-control bg-transparent"
+              placeholder="Enter your age">
+              <div id="warnningAge" class="alert alert-danger w-100 mt-2 d-none ">
+                Enter valid Age
+              </div>
+          </div>
+      
+          <div class="col-md-6 my-3">
+            <input
+              type="password"
+              id="password"
+              class="form-control
+              bg-transparent"
+              placeholder="Enter your password">
+              <div id="warnningPassword" class="alert alert-danger w-100 mt-2 d-none ">
+                Enter valid password *Minimum eight characters, at least one letter and one number*
+              </div>
+          </div>
+          
+          <div class="col-md-6 my-3">
+            <input
+              type="password"
+              id="repassword"
+              class="form-control
+              bg-transparent"
+              placeholder="Repassword">
+          </div>
+          <div id="warnningRepassword" class="alert alert-danger w-100 mt-2 d-none ">
+            Enter valid repassword
+          </div>
+        </div>
+        <button id="subBtn" class="btn btn-outline-danger px-3 mt-3" disabled>Submit</button>
+      </div>
+    </section>
+    <!--  E N D                     M A I N    B O D Y                             S E C T I O N-->
+    </main>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
